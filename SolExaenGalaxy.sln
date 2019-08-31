@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "REAM.ApiSeguridad", "REAM.A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RAEM.ApiSQL", "RAEM.ApiCompra\RAEM.ApiSQL.csproj", "{7C73437C-A77B-45D4-BE7C-AC30F8DB2AE6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "REAM.ApiEnvio", "REAM.ApiEnvio\REAM.ApiEnvio.csproj", "{5CD8AB1E-F3E3-433A-A29A-BB8A898A9BAD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{7C73437C-A77B-45D4-BE7C-AC30F8DB2AE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C73437C-A77B-45D4-BE7C-AC30F8DB2AE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C73437C-A77B-45D4-BE7C-AC30F8DB2AE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CD8AB1E-F3E3-433A-A29A-BB8A898A9BAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CD8AB1E-F3E3-433A-A29A-BB8A898A9BAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CD8AB1E-F3E3-433A-A29A-BB8A898A9BAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CD8AB1E-F3E3-433A-A29A-BB8A898A9BAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
