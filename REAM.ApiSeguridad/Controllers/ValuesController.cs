@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace REAM.ApiSeender.Controllers
+namespace REAM.ApiSeguridad.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

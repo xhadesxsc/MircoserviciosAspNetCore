@@ -9,8 +9,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using REAM.ApiSeguridad.Help;
 
-namespace REAM.ApiSeender
+namespace REAM.ApiSeguridad
 {
     public class Startup
     {
@@ -24,6 +25,13 @@ namespace REAM.ApiSeender
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            var builder = services.AddIdentityServer()
+                .AddInMemoryIdentityResources(Config.GetIdentityResources())
+                .AddInMemoryApiResources(Config.GetApis())
+                .AddInMemoryClients(Config.GetClients())
+                .AddTestUsers(Config.GetUsers())
+                .AddDeveloperSigningCredential();
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
@@ -34,7 +42,7 @@ namespace REAM.ApiSeender
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseIdentityServer();
             app.UseMvc();
         }
     }
